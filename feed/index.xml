@@ -10,7 +10,7 @@
 <channel>
 	<title>Arman Rahman</title>
 	<atom:link href="https://helloarman.github.io/feed/" rel="self" type="application/rss+xml" />
-	<link>https://helloarman.github.io</link>
+	<link>https://helloarman.github.io/</link>
 	<description>Just another WordPress site</description>
 	<lastBuildDate>Sat, 31 Jul 2021 06:48:18 +0000</lastBuildDate>
 	<language>en-US</language>

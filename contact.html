@@ -2,7 +2,6 @@
 <html lang="en" class="">
 
 
-<!-- Mirrored from html.themestransmit.com/bentoman/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 Mar 2025 03:48:45 GMT -->
 <head>
     <!-- Basic Page Needs
     ================================================== -->
@@ -13,15 +12,14 @@
     ================================================== -->
     <meta name="viewport" 
         content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="keyword"
-        content="resume, cv, portfolio, vcard, responsive, retina, jquery, css3, tailwindcss, material CV, creative, designer, developer, online cv, online resume, powerful portfolio, professional, landing page">
+        <meta name="keywords" content="Arman Rahman, Software Engineer, Laravel Developer, PHP Developer, Web Development, JavaScript, Ajax, MySQL, Bootstrap, CSS, WordPress Developer, Custom Plugins, Scalable Web Applications, Full Stack Developer, Web Solutions, Cloud Computing">
     <meta name="description" 
-        content="bentoMan - Personal portfolio resume template">
-    <meta name="author" content="ThemeArray">
+        content="Arman Rahman – Passionate Software Engineer specializing in Laravel, PHP, JavaScript, and web application development. Experienced in building scalable web solutions, WordPress development, and custom plugins. Let's connect and collaborate!">
+    <meta name="author" content="Arman Rahman - Software Engineer">
 
     <!-- Site Title
     ================================================== -->
-    <title>BentoMan - Personal portfolio resume template</title>
+    <title>Arman Rahman - Software Engineer</title>
 
     <!-- Site Favicon
     ================================================== -->
@@ -33,13 +31,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;display=swap" rel="stylesheet">
 
+    
     <!-- All CSS Here
     ================================================== -->
     <link rel="stylesheet" href="assets/css/fontAwesome5Pro.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-
+    
+    <!-- Alpine JS
+    ================================================== -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
 </head>
 
 <body class="relative custom_cursor bg-[#F5F7F9] dark:bg-powerBlack">
@@ -53,13 +55,17 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="preloader fixed z-999 h-screen w-full left-0 top-0 flex items-center justify-center bg-seashell dark:bg-darkGray">
         <h2 class="load-text z-20 text-xl font-light tracking-[15px] uppercase">
-            <span class="![animation-delay:_0s]">L</span>
-            <span class="![animation-delay:_0.1s]">o</span>
-            <span class="![animation-delay:_0.2s]">a</span>
-            <span class="![animation-delay:_0.3s]">d</span>
-            <span class="![animation-delay:_0.4s]">i</span>
+            <span class="![animation-delay:_0s]">@</span>
+            <span class="![animation-delay:_0.1s]">h</span>
+            <span class="![animation-delay:_0.1s]">e</span>
+            <span class="![animation-delay:_0.2s]">l</span>
+            <span class="![animation-delay:_0.2s]">l</span>
+            <span class="![animation-delay:_0.3s]">o</span>
+            <span class="![animation-delay:_0.3s]">a</span>
+            <span class="![animation-delay:_0.4s]">r</span>
+            <span class="![animation-delay:_0.4s]">m</span>
+            <span class="![animation-delay:_0.5s]">a</span>
             <span class="![animation-delay:_0.5s]">n</span>
-            <span class="![animation-delay:_0.6s]">g</span>
         </h2>
     </div>
     <!--~~./ end Preloader ~~-->
@@ -73,71 +79,22 @@
         <div class="container">
             <div class="nav max-md:py-3 py-5 px-4 lg:px-6 xl:px-8 flex items-center justify-between bg-white dark:bg-[#1B1C1C] rounded-xl shadow-lg shadow-black/5">
                 <a href="index.html">
-                    <!-- Light Version Logo -->
-                    <img 
-                        src="assets/img/logo.svg" 
-                        alt="bentoMan - Personal portfolio resume template"
-                        class="max-md:w-32 dark:hidden"
-                    >
-                    <!-- Dark version Logo -->
-                    <img 
-                        src="assets/img/logo-dark.svg" 
-                        alt="bentoMan - Personal portfolio resume template"
-                        class="max-md:w-32 hidden dark:block"
-                    >
+                    <h2 class="font-bold text-2xl text-black dark:text-white">@helloarman</h2>
                 </a>
                 <div class="navbar-nav" id="bentoman_main_menu">
-                    <ul class="main-menu lg:flex max-lg:hidden">
-                        <li class="menu-item relative">
-                            <a href="index.html">
-                                Home
-                            </a>
-                        </li>
-                        <li class="menu-item relative">
-                            <a href="about.html">
-                                About
-                            </a>
-                        </li>
+                    <ul class="main-menu lg:flex max-lg:hidden" x-data="{ navItems: [], currentUrl: window.location.pathname }"
+                        x-init="fetch('/layout/nav.json')
+                        .then(response => response.json())
+                        .then(data => navItems = data)">
                         
-                        <li class="menu-item relative">
-                            <a href="projects.html">
-                                Projects
-                            </a>
-                        </li>
-                        <li class="menu-item relative">
-                            <a href="blog.html">
-                                Blog
-                            </a>
-                        </li>
-                        <li class="menu-item relative menu-item-has-children">
-                            <a href="#">
-                                Pages
-                            </a>
-                            <ul class="sub-menu">
-                                <li class="menu-item relative">
-                                    <a href="blog-2.html">Blog 2</a>
-                                </li>
-                                <li class="menu-item relative">
-                                    <a href="404.html">404</a>
-                                </li>
-                                <li class="menu-item relative">
-                                    <a href="content-none.html">Content None</a>
-                                </li>
-                                <li class="menu-item relative menu-item-has-children">
-                                    <a href="#">Others</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item relative">
-                                            <a href="projects.html">Projects</a>
-                                        </li>
-                                        <li class="menu-item relative">
-                                            <a href="services.html">Service</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                        <template x-for="item in navItems" :key="item.url">
+                            <li :class="{'menu-item relative': true, 'current-menu-item': currentUrl === new URL(item.url, window.location.origin).pathname}">
+                                <a :href="item.url" x-text="item.title"></a>
+                            </li>
+                        </template>
                     </ul>
                 </div>
+
                 <div class="button-groups flex items-center gap-4 *:border *:border-flasWhite *:dark:border-flasBlack *:bg-gradient-to-b *:from-milkWhite *:to-seashell dark:*:from-metalBlack dark:*:to-oilBlack">
                     <button class="btn_theme_switch w-13 h-13 max-md:w-12 max-md:h-12 relative rounded-full group *:w-5 *:h-5 *:max-md:w-6 *:max-md:h-6 *:absolute *:top-1/2 *:left-1/2 *:-translate-x-1/2 *:-translate-y-1/2 " aria-label="Dark - Light Switch">
                         <svg  class="sun group-[&.btn-light]:opacity-0" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,73 +119,22 @@
     <div class="mobile_menu fixed transition-all duration-300 top-0 -left-96 h-full bg-white dark:bg-powerBlack z-999 p-4 lg:p-6 w-80 shadow-lg [&.is-menu-open]:left-0 flex flex-col lg:hidden">
         <div class="relative">
             <a href="index.html">
-                <img 
-                    src="assets/img/logo.svg" 
-                    alt="bentoMan - Personal portfolio resume template"
-                    class="max-md:w-32 dark:hidden"
-                >
-                <img 
-                    src="assets/img/logo-dark.svg" 
-                    alt="bentoMan - Personal portfolio resume template"
-                    class="max-md:w-32 hidden dark:block"
-                >
+                <h2 class="font-bold text-2xl text-black dark:text-white">@helloarman</h2>
             </a>
             <button class="close_menu absolute right-0 top-0 w-8 h-8 bg-powerBlack dark:bg-pastelGrey text-white dark:text-black flex items-center justify-center text-sm rounded-sm">
                 <i class="fal fa-times"></i>
             </button>
         </div>
         <div class="navbar-nav my-12 h-calc(100vh_-_16rem) overflow-y-scroll" id="bentoman_mobile_menu">
-            <ul class="main-menu space-y-2">
-                <li class="menu-item relative">
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li class="menu-item relative">
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
-                
-                <li class="menu-item relative">
-                    <a href="projects.html">
-                        Projects
-                    </a>
-                </li>
-                <li class="menu-item relative">
-                    <a href="blog.html">
-                        Blog
-                    </a>
-                </li>
-                <li class="menu-item relative menu-item-has-children">
-                    <a href="#">
-                        Pages
-                    </a>
-                    <button class="submenu-button fal fa-chevron-down"></button>
-                    <ul class="sub-menu">
-                        <li class="menu-item relative">
-                            <a href="blog-2.html">Blog 2</a>
-                        </li>
-                        <li class="menu-item relative">
-                            <a href="404.html">404</a>
-                        </li>
-                        <li class="menu-item relative">
-                            <a href="content-none.html">Content None</a>
-                        </li>
-                        <li class="menu-item relative menu-item-has-children">
-                            <a href="#">Others</a>
-                            <button class="submenu-button fal fa-chevron-down"></button>
-                            <ul class="sub-menu">
-                                <li class="menu-item relative">
-                                    <a href="projects.html">Projects</a>
-                                </li>
-                                <li class="menu-item relative">
-                                    <a href="services.html">Service</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
+            <ul class="main-menu space-y-2" x-data="{ navItems: [], currentUrl: window.location.pathname }"
+            x-init="fetch('/layout/nav.json')
+            .then(response => response.json())
+            .then(data => navItems = data)">
+                <template x-for="item in navItems" :key="item.url">
+                    <li :class="{'menu-item relative': true, 'current-menu-item': currentUrl === new URL(item.url, window.location.origin).pathname}">
+                        <a :href="item.url" x-text="item.title"></a>
+                    </li>
+                </template>
             </ul>
         </div>
 
@@ -256,7 +162,7 @@
     <div class="main-content pt-28 md:pt-32 lg:pt-36 xl:pt-48">
         <div class="container space-y-6">
 
-            <div class="grid lg:grid-cols-2 gap-6 items-start">
+            <div>
 
                 <!-- Contact Information Wrapper Starts -->
                 <div class="grid sm:grid-cols-2 gap-6 items-start" data-aos="fade-up">
@@ -270,8 +176,8 @@
                         </div>
                         <div class="description">
                             <h6 class="font-semibold text-xl xl:text-2xl text-darkGray dark:text-pastelGrey">
-                                <a href="tel:+0123456789">
-                                    +0123 456 789
+                                <a href="tel:+8801857899365">
+                                    +880 1857-899365
                                 </a>
                             </h6>
                             <p>
@@ -290,7 +196,7 @@
                         </div>
                         <div class="description">
                             <h6 class="font-semibold text-xl xl:text-2xl text-darkGray dark:text-pastelGrey">
-                                <a href="mailto:alex@gmail.com">alex@gmail.com</a>
+                                <a href="mailto:contact.armanrahman@gmail.com">contact.armanrahman@gmail.com</a>
                             </h6>
                             <p>
                                 My Contact Mail
@@ -298,44 +204,16 @@
                         </div>
                     </div>
 
-                    <!-- Contact Information Widget -->
-                    <div class="contact-map sm:col-span-2 rounded-2xl overflow-hidden relative">
-                        <iframe class="w-full h-80" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5898.94195686004!2d-71.05058320763719!3d42.33248101904471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a8da85c5995%3A0xf103dd123258d82b!2sTelegraph%20Hill%2C%20Boston%2C%20MA%2002127%2C%20USA!5e0!3m2!1sen!2sbd!4v1714472705494!5m2!1sen!2sbd" ></iframe>
-
-                        <div class="absolute bottom-4 right-4 left-4 xl:bottom-6 xl:right-6 xl:left-6 p-4 xl:p-6 rounded-xl flex flex-wrap items-start gap-6 bg-gradient-to-b from-milkWhite to-seashell dark:from-metalBlack dark:to-oilBlack border border-flasWhite dark:border-flasBlack">
-                            <div class="icon w-15 h-15 flex-[0_0_3.75rem] rounded-full flex-center sm:mb-4 border border-flasWhite dark:border-flasBlack bg-gradient-to-b from-milkWhite to-seashell dark:from-metalBlack dark:to-oilBlack">
-                                <svg class="w-6 text-darkGray dark:text-pastelGrey" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.0009 13.4299C13.724 13.4299 15.1209 12.0331 15.1209 10.3099C15.1209 8.58681 13.724 7.18994 12.0009 7.18994C10.2777 7.18994 8.88086 8.58681 8.88086 10.3099C8.88086 12.0331 10.2777 13.4299 12.0009 13.4299Z" stroke="currentcolor" stroke-width="1.5"/>
-                                    <path d="M3.61971 8.49C5.58971 -0.169998 18.4197 -0.159997 20.3797 8.5C21.5297 13.58 18.3697 17.88 15.5997 20.54C13.5897 22.48 10.4097 22.48 8.38971 20.54C5.62971 17.88 2.46971 13.57 3.61971 8.49Z" stroke="currentcolor" stroke-width="1.5"/>
-                                </svg>
-                            </div>
-                            <div class="description flex-1">
-                                <h5 class="text-darkGray dark:text-pastelGrey font-bold text-lg lg:text-xl xl:text-2xl">
-                                    Currently Living
-                                </h5>
-                                <p>
-                                    2350 Jericho Turnpike, Garden City Park, NY 11040, United States
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
                 <!-- Contact Information Wrapper Ends -->
 
-                <!-- Contact Form Wrapper Starts -->
-                <div class="rounded-2xl max-md:p-4 p-6 xl:px-10 bg-gradient-to-b from-milkWhite to-seashell dark:from-metalBlack dark:to-oilBlack border border-flasWhite dark:border-flasBlack" data-aos="fade-up">
-
-                    <h3 class="font-bold text-darkGray dark:text-pastelGrey text-xl lg:text-2xl mb-4">
-                        Book an Appointment
-                    </h3>
-                    <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/contact-armanrahman/30min?hide_gdpr_banner=1&text_color=2f3236&primary_color=2f3236" style="min-width:320px;height:700px;"></div>
+                <h3 class="text-center font-bold text-darkGray dark:text-pastelGrey text-2xl lg:text-2xl pt-28">
+                    Book an Appointment
+                </h3>
+                <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/helloarman/30min?hide_gdpr_banner=1&text_color=2f3236&primary_color=2f3236" style="min-width:320px;height:700px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Calendly inline widget end -->
-
-                </div>
-                <!-- Contact Form Wrapper Ends -->
 
             </div>
 
@@ -354,12 +232,12 @@
                 Let's Talk
             </h5>
             <p>
-                <a href="#" class="text-powerBlack dark:text-pastelGrey py-4 px-12 rounded-4xl bg-gradient-to-b from-milkWhite to-seashell dark:from-metalBlack dark:to-oilBlack text-regular xl:text-lg inline-flex items-center border border-gray-100  dark:border-white/5">
-                    youremail@domain.com
+                <a href="https://wa.me/message/KF2V3NIAIBFHC1" class="text-powerBlack dark:text-pastelGrey py-4 px-12 rounded-4xl bg-gradient-to-b from-milkWhite to-seashell dark:from-metalBlack dark:to-oilBlack text-regular xl:text-lg inline-flex items-center border border-gray-100  dark:border-white/5 gap-2" target="_blank">
+                    <i class="fab fa-whatsapp"></i> <span>+880 1857-899365</span>
                 </a>
             </p>
             <p>
-                &copy;2024 <a href="#" class="text-darkGray font-medium dark:text-white">bentoMan</a>. All Rights Reserved
+                &copy;<span x-data x-text="new Date().getFullYear()"></span> <a href="https://github.com/helloarman" class="text-darkGray font-medium dark:text-white">@helloarman</a>. All Rights Reserved
             </p>
         </div>
     </footer>

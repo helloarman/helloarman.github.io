@@ -143,7 +143,7 @@
                 <p  class="font-medium">
                     Have an idea?
                 </p>
-                <a href="#" class="bg-darkGray dark:bg-metalBlack inline-flex text-white font-semibold py-3 px-16 leading-1.75 rounded-md">
+                <a href="https://wa.me/message/KF2V3NIAIBFHC1" class="bg-darkGray dark:bg-metalBlack inline-flex text-white font-semibold py-3 px-16 leading-1.75 rounded-md">
                     Let's Talk
                 </a>
             </div>
@@ -161,10 +161,10 @@
     <div class="main-content pt-28 md:pt-32 lg:pt-36 xl:pt-48">
         <div class="container space-y-6">
 
-            <div class="blog-wrapper md:flex gap-x-4 xl:gap-x-8 2xl:gap-x-12"> <!--Add .sb-hidden if sidebar hidden / no sidebar for 3 column post item-->
+            <div class="blog-wrapper md:flex gap-x-4 xl:gap-x-8 2xl:gap-x-12">
                 
                 <div class="blog-item-wrapper md:flex-1 sticky_sidebar" data-aos="fade-up">
-                    <div class="[&_.blog-item]:p-2 [&_.blog-item]:rounded-xl xl:[&_.blog-item]:rounded-2xl [&_.blog-item]:bg-gradient-to-b [&_.blog-item]:from-milkWhite [&_.blog-item]:to-seashell dark:[&_.blog-item]:from-metalBlack dark:[&_.blog-item]:to-oilBlack [&_.blog-item]:border [&_.blog-item]:border-flasWhite dark:[&_.blog-item]:border-flasBlack grid grid-cols-2 gap-4 sm:-mx-3" x-data="{ navItems: [], currentUrl: window.location.pathname }" x-init="fetch('https://dev.to/api/articles?username=armanrahman')
+                    <div class="[&_.blog-item]:p-2 [&_.blog-item]:rounded-xl xl:[&_.blog-item]:rounded-2xl [&_.blog-item]:bg-gradient-to-b [&_.blog-item]:from-milkWhite [&_.blog-item]:to-seashell dark:[&_.blog-item]:from-metalBlack dark:[&_.blog-item]:to-oilBlack [&_.blog-item]:border [&_.blog-item]:border-flasWhite dark:[&_.blog-item]:border-flasBlack grid grid-cols-1 md:grid-cols-2 gap-4 sm:-mx-3" x-data="{ navItems: [], currentUrl: window.location.pathname }" x-init="fetch('https://dev.to/api/articles?username=armanrahman')
                     .then(res => res.json())
                     .then(data => navItems = data)">
                         <template x-for="item in navItems" :key="item.id">

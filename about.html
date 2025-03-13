@@ -38,6 +38,10 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <!-- Github Activity Calendar -->
+    <script src="assets/plugins/github-activity/github-calendar.js"></script>
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-calendar.css"/>
     
     <!-- Alpine JS
     ================================================== -->
@@ -143,7 +147,7 @@
                 <p  class="font-medium">
                     Have an idea?
                 </p>
-                <a href="#" class="bg-darkGray dark:bg-metalBlack inline-flex text-white font-semibold py-3 px-16 leading-1.75 rounded-md">
+                <a href="https://wa.me/message/KF2V3NIAIBFHC1" class="bg-darkGray dark:bg-metalBlack inline-flex text-white font-semibold py-3 px-16 leading-1.75 rounded-md">
                     Let's Talk
                 </a>
             </div>
@@ -448,6 +452,14 @@
                 </ul>
             </div>
 
+            <div class="services overflow-hidden rounded-2xl p-4 lg:p-6 xl:p-10 bg-gradient-to-b from-milkWhite to-seashell dark:from-metalBlack dark:to-oilBlack border border-gray-100  dark:border-white/5" data-aos="fade-up">
+                <h3 class="text-powerBlack dark:text-pastelGrey font-semibold text-2xl xl:text-3xl mb-6">
+                    Github Activity Calendar
+                </h3>
+
+                <div class="calendar">Loading Stuff...</div>
+            </div>
+
             <div class="social-contacts grid sm:grid-cols-2 md:grid-cols-3 gap-6  *:relative *:rounded-2xl *:p-4 lg:*:p-6 xl:*:p-8 *:bg-gradient-to-b *:from-milkWhite *:to-seashell dark:*:from-metalBlack dark:*:to-oilBlack *:flex *:items-center *:gap-4 *:border *:border-gray-100 dark:*:border-white/5" data-aos="fade-up">
                 
                 <div class="contact-item">
@@ -548,6 +560,15 @@
     <script src="assets/js/tilt.jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/theme-mode.js"></script>
+
+    <!-- Github Activity Calendar -->
+    <script>
+        GitHubCalendar(".calendar", "helloarman", {
+            responsive: true,
+            tooltips: true,
+            global_stats: false // This disables the contribution stats
+        });
+    </script>
     <!-- Js Library End -->
 </body>
 

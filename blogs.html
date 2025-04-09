@@ -171,7 +171,7 @@
                             <div class="isotop-item">
                                 <div class="blog-item group">
                                     <div class="thumbnail relative overflow-hidden rounded-xl">
-                                        <a href="blogs-details.html">
+                                        <a :href="item.url">
                                             <img :src="item.social_image" alt="The spectacle before us was indeed sublime" class="w-full transition-all duration-300 group-hover:scale-110">
                                         </a>
                                         <div class="tags absolute right-4 top-4">
@@ -180,8 +180,13 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <style>
+                                        .break-words{
+                                            word-break: break-all !important
+                                        }
+                                    </style>
                                     <div class="description py-6 px-4 pb-4">
-                                        <h4 class="text-xl 2xl:text-2xl font-bold text-darkGray dark:text-pastelGrey mb-1">
+                                        <h4 class="text-xl 2xl:text-2xl font-bold text-darkGray dark:text-pastelGrey mb-1 break-words">
                                             <a :href="item.url" class="inline bg-gradient-to-r from-current from-0% to-current to-100% bg-no-repeat bg-[length:0_1px] bg-[0_95%] ease-in-out duration-200 transition-[background-size] hover:bg-[length:100%_1px]" target="_blank" x-text="item.title">
                                                 
                                             </a>
